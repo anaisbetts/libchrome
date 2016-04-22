@@ -37,8 +37,7 @@ def main():
   target_arch = args.target_arch
   return (apply_patches() or
           copy_chromiumcontent_files() or
-          update_clang() or
-          run_gyp(target_arch))
+          update_clang())
 
 
 def parse_args():
